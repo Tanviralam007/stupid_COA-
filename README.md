@@ -48,19 +48,3 @@ gcc file.o -o file.exe
 ```
 file.exe
 ```
-
-**Printing Intel Syntax with Verbose Assembly:**
-
-To get Intel syntax assembly with detailed comments:
-
-```
-gcc -S -masm=intel file.c -fverbose-asm -o file.s
-```
-
-* `-fverbose-asm`: Output assembly code with verbose comments.
-
-Use objdump with Intel syntax:
-
-```
-objdump -M intel -d file.exe
-```
